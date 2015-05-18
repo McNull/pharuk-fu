@@ -1,2 +1,26 @@
 /* Styles go here */
 
+.pf-header {
+  position: fixed;
+  height: 300px;
+  width: 100%;
+  z-index: 1;
+}
+
+.pf-fix-fixed {
+  padding-top: 320px;
+}
+
+.pf-movies {
+  
+}
+
+.pf-movie-item {
+  opacity:  0.5;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.pf-movie-item:hover {
+  opacity: 1.0
+}

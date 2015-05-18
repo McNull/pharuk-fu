@@ -1,0 +1,31 @@
+<div ng-controller="MovieListController">
+    <nav class="text-center">
+        <ul class="pf-fix-fixed pagination">
+            <li>
+                <a href="" aria-label="Previous" ng-click="pager.prev()">
+                            &laquo;
+                        </a>
+            </li>
+            <li>
+                <a href="" aria-label="Next" ng-click="pager.next()">
+                            &raquo;
+                        </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="pf-movies">
+        <div class="container">
+            <div class="row">
+                <div ng-repeat="movie in movies" class="col-sm-6 col-md-4">
+                    <div class="pf-movie-item thumbnail" ng-click="open(movie)">
+                        <img ng-src="http://moviedb.skay.nl/{{ movie.image }}">
+                        <div class="caption">
+                            <h3>{{ movie.title }}</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et, deserunt ducimus doloribus quo eligendi accusantium laboriosam non fuga ab. Quidem, maiores ratione cumque facilis amet adipisci nihil totam nobis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

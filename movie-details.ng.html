@@ -1,0 +1,23 @@
+<div class="pf-fix-fixed" ng-controller="MovieDetailsController">
+  
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+              <img style="width: 100%" ng-src="http://moviedb.skay.nl/{{ movie.image }}"  class="img-responsive">      
+          </div>
+
+          <div class="col-sm-6">
+            
+            <h1>{{ movie.title }}</h1>
+            <h2>{{ movie.year }}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nulla blanditiis iure quibusdam dolores magnam officia eum? Repellat numquam veritatis, est, quisquam dicta quaerat odit ducimus, eius voluptatem provident commodi.</p>
+            
+            <a ng-href="{{ movie.imdb }}" class="btn btn-primary" target="_blank">IMDB</a>
+          </div>
+      </div>
+        
+    </div>
+    
+  
+</div>
+

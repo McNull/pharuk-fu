@@ -2,42 +2,24 @@
 <html ng-app="app">
 
 <head>
-  <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-  <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <script src="movie-data.js"></script>
-  <script src="script.js"></script>
+    <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
+    <script data-require="angular-route@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="movie-data.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Pharok-Fu</h1> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quos, minima fugiat fugit iste alias aliquam sequi a voluptatum perspiciatis ut molestiae consequuntur numquam incidunt eos consectetur dolorum laudantium dolores!</p>
-    </div>
-  </div>
-
-
-  <div ng-controller="MainController">
-    <!--<pre><code>{{ persons | json }}</code></pre>-->
-    <div class="container">
-      <div class="row">
-        
-        <div ng-repeat="movie in movies" class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img ng-src="http://moviedb.skay.nl/{{ movie.image }}">
-            <div class="caption">
-              <h3>{{ movie.title }}</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, et, deserunt ducimus doloribus quo eligendi accusantium laboriosam non fuga ab. Quidem, maiores ratione cumque facilis amet adipisci nihil totam nobis.</p>
-            </div>
-          </div>
+  
+  <div class="jumbotron pf-header text-center">
+        <div class="container">
+            <h1>Pharok-Fu</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quos, minima fugiat fugit iste alias aliquam sequi a voluptatum perspiciatis ut molestiae consequuntur numquam incidunt eos consectetur dolorum laudantium dolores!</p>
         </div>
-        
-
-      </div>
     </div>
-  </div>
 
+    <div ng-view></div>
 </body>
 
 </html>

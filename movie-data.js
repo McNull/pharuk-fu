@@ -13,10 +13,26 @@ movies.factory('movieResource', function(movieData) {
       params.take = params.take === undefined ? movieData.length : params.take;
       
       result = result.slice(params.skip, params.skip +  params.take);
-      
-      
+     
       success(result);
       
+    },
+
+    get: function(params, success) {
+
+      var i = movieData.length;
+      var result;
+
+      while(i--) {
+        var movie = movieData[i];
+
+        if(movie.title === params.title) {
+          result = movie;
+          break;
+        }
+      }
+
+      success(result);
     }
   };
   
